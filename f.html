@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+
+</head>
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <!-- Add spacer, to align navigation to the right -->
+                <!-- Navigation. We hide it in small screens. -->
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                </nav>
+            </div>
+        </header>
+        <style>
+            .card-me {
+                padding-left: 25px;
+                padding-right: 25px;
+                padding-bottom: 25px;
+            }
+            label.input-custom-file input[type=file] {
+  display: none;
+}
+        </style>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--4-col"></div>
+                    <div class="mdl-cell mdl-cell--4-col"></div>
+                    <div class="mdl-cell mdl-cell--4-col"></div>
+                </div>
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--4-col"></div>
+                    <div class="mdl-cell mdl-cell--4-col">
+
+                        <div class="demo-card-wide mdl-card mdl-shadow--8dp card-me">
+                            <h4 align="center">Upload</h4>
+
+                            <div align="center">
+                                <form ref='uploadForm'
+                                      id='uploadForm'
+                                      action='/upload'
+                                      method='post'
+                                      enctype="multipart/form-data">
+
+
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="password" id="psswrd" name="psswrd">
+                                        <label class="mdl-textfield__label" for="password">Password</label>
+                                    </div>
+                                    <label class="input-custom-file mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                                        ADD FILE
+                                        <input type="file" name="sampleFile">
+                                    </label>
+                                   
+
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                                        UPLOAD
+                                    </button>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col"></div>
+                </div>
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--4-col"></div>
+                    <div class="mdl-cell mdl-cell--4-col"></div>
+                    <div class="mdl-cell mdl-cell--4-col"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
