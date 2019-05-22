@@ -7,7 +7,7 @@ var fs = require('fs');
 
 var mammoth = require("mammoth");
 
-const port = 3000;
+const port = 80;
 
 app.engine('html', mustacheExpress());
 
